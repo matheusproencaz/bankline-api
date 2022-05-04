@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,12 +28,19 @@ public class CorrentistaController {
 	
 	@Autowired
 	private CorrentistaService service;
+
+	@ApiOperation(value = "List by Id")
+	@GetMapping(value = "/{id}")
+	public Correntista findById(@PathVariable Integer id) {
+		return service.findById(id);
+	}
 	
 	@ApiOperation(value = "List All")
 	@GetMapping
 	public List<Correntista> findAll(){
 		return repository.findAll();
 	}
+	
 	
 	@ApiOperation(value = "Create Correntista")
 	@PostMapping
