@@ -1,6 +1,7 @@
 package com.dio.santander.bankline.api.services;
 
 import java.util.Date;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,6 +29,11 @@ public class CorrentistaService {
 		correntista.setConta(conta);
 		
 		repository.save(correntista);
+	}
+
+	public Correntista findById(Integer id) {
+		Optional<Correntista> correntista = repository.findById(id);
+		return correntista.orElse(null);
 	}
 	
 }
