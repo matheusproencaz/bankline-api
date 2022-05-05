@@ -20,7 +20,7 @@ export class MovimentacaoListComponent implements OnInit {
   }
 
   listMovimentacoes(): void {
-    this.movimentacaoService.list()
+    this.movimentacaoService.findByIdConta(this.correntista.id)
       .subscribe(
         data => {
           this.movimentacoes = data;
