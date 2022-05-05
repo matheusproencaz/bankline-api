@@ -2,3 +2,10 @@
 .table{
     min-width: 960px;
 }
+
+.btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 0;
+}
