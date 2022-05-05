@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.dio.santander.bankline.api.model.enums.MovimentacaoTipo;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Table(name = "tab_movimentacao")
@@ -22,6 +23,7 @@ public class Movimentacao {
 	private Integer id;
 	
 	@Column(name = "data_hora")
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private LocalDateTime dataHora;
 	
 	private String descricao;
