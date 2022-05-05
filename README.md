@@ -2,6 +2,9 @@
 
 A Santander Dev Week é uma semana de imersão com 4 dias nas tecnologias mobile e fullstack o seu principal objetivo foi desenvolver uma API REST para a criação de extratos bancários do Santander.
 
+Não era uma parte do projeto, mas fiz o deploy no netlify para aprender a como fazer deploy de aplicações em Angular, no mesmo, você pode acessar <a href="https://teal-druid-096405.netlify.app/">aqui</a>!
+
+
 ## 02/05 - 05/05 de 2022.
 
 ### Dia - 02/05
@@ -31,3 +34,15 @@ Chegamos ao nosso ato final e, com isso, ao universo Mobile. Nesse contexto, apr
 
 ### BackEnd - Swagger
 <img src="./imagens/BackEnd-Swagger.png"/>
+
+
+### FrontEnd
+
+#### Correntistas
+<img src="./imagens/frontend-correntistas.png"/>
+
+#### Movimentações
+<img src="./imagens/frontend-movimentacoes.png"/>
+
+#### Nova Movimentação
+<img src="./imagens/frontend-novasmovimentacoes.png"/>

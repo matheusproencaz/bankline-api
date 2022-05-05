@@ -22,7 +22,6 @@ export class CorrentistaComponent implements OnInit {
       .subscribe(
         data => {
           this.correntistas = data;
-          console.log(data);
         },
         error => {
           console.log(error);
@@ -33,11 +32,9 @@ export class CorrentistaComponent implements OnInit {
       cpf:this.cpf,
       nome:this.nome
     };
-    console.log(correntista);
     this.correntistaService.create(correntista)
       .subscribe(
         response => {
-          console.log(response);
           this.exibirCorrentistas();
         },
         error => {

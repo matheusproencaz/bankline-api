@@ -29,7 +29,6 @@ export class MovimentacaoNewComponent implements OnInit {
       .subscribe(
         data => {
           this.correntistas = data;
-          console.log(data);
         },
         error => {
           console.log(error);
@@ -49,8 +48,6 @@ export class MovimentacaoNewComponent implements OnInit {
 
     };
 
-    console.log(movimentacao);
-    
     this.movimentacaoService.create(movimentacao)
       .subscribe(
         response => {

@@ -24,7 +24,6 @@ export class MovimentacaoListComponent implements OnInit {
       .subscribe(
         data => {
           this.movimentacoes = data;
-          console.log(data);
         },
         error => {
           console.log(error);
@@ -36,7 +35,6 @@ export class MovimentacaoListComponent implements OnInit {
       .subscribe(
         data => {
           this.correntistas = data;
-          console.log(data);
         },
         error => {
           console.log(error);
